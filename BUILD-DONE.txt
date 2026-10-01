@@ -1,0 +1,8 @@
+Tests: 19 passed (pytest 8.3.5, Python 3.12.10).
+Local implementation commit: 97ac3a496ae5a48e0440a727e026955587ab63eb
+Installed CLI end-to-end demo: 0.861 seconds, below 5 seconds.
+Fixture counts: 200 sends, 60 replies, 30 positive replies, 15 meetings.
+Publishing: not performed; separate verification step owns publishing.
+Verdict: pending the two-week real-use evidence window, as required by the brief.
+
+Built a local, CPU-only Python CLI with fixtures, validation, aggregation, reports and exact variant comparisons. The pure core validates explicit outcome records and computes counts and rational rates, while labelled synthetic fixtures provide independent hand-computed ground truth. Markdown and JSON reports state declared real versus synthetic provenance and refuse unmeasured savings. Tests cover deterministic bytes, planted ground truth, zero false positives, changed input outcomes, malformed and missing inputs, adversarial values, Unicode, long strings and atomic output failures. README, lessons and a pending real-use evidence record document the honesty boundary and the improvement policy. This report references the implementation commit; a subsequent documentation commit records this evidence.
